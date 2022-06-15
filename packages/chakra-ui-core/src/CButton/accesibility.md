@@ -1,23 +1,26 @@
 # Button | Accessibility ♿️
 
-This report is adapted to list the [WAI-ARIA Authoring practices for buttons](https://www.w3.org/TR/wai-aria-practices-1.2/#button) supported by Chakra UI for the `CButton` component.
+This report is adapted to list the [WAI-ARIA Authoring practices for buttons](https://www.w3.org/WAI/ARIA/apg/patterns/button/) supported by Chakra UI for the `CButton` component.
 
 ### Description
-A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation. 
+
+A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
 #### Components
+
 `@chakra-ui/vue` exports 2 Button related components:
+
 - `CButton`
 - `CButtonGroup`
 
 ### `CButton` Keyboard Interaction
+
 - [x] **`Space`**: Activates the button.
 - [x] **`Enter`**: Activates the button.
 
-
 ### `CButton` WAI-ARIA Roles, States, and Properties:
 
-> The following should be implemented by the user  based on their needs.
+> The following should be implemented by the user based on their needs.
 
 - The `CButton` should have an accessible label. By default, the accessible name is computed from any text content inside the `CButton` element. However, it can also be provided with `aria-labelledby` or `aria-label`.
 - If a description of the button's function is present, the `CButton` should have `aria-describedby` attribute set to the ID of the element containing the description.
